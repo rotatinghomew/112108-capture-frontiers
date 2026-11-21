@@ -1,0 +1,16 @@
+{"step": 1, "kind": "trigger", "body": {"boot": "g9", "seq": 1, "pulse": "p", "time": 100, "channels": ["cam1", "cam2"], "tol": 4}}
+{"step": 1, "kind": "trigger", "body": {"boot": "g9", "seq": 3, "pulse": "p", "time": 109, "channels": ["cam1", "cam2"], "tol": 4}}
+{"step": 1, "kind": "clock", "body": {"camera": "cam1", "boot": "c1", "offset": 100, "first_tick": 0, "last_tick": 50, "rev": 1}}
+{"step": 1, "kind": "clock", "body": {"camera": "cam2", "boot": "c2", "offset": 100, "first_tick": 0, "last_tick": 50, "rev": 1}}
+{"step": 1, "kind": "frame", "body": {"camera": "cam1", "boot": "c1", "id": "f2", "tick": 7, "pulse": "p", "rev": 1, "upload": "h1"}}
+{"step": 1, "kind": "frame", "body": {"camera": "cam1", "boot": "c1", "id": "f2", "tick": 7, "pulse": "p", "rev": 1, "upload": "h2"}}
+{"step": 1, "kind": "close", "body": {"boot": "g9", "last": 3}}
+{"step": 2, "kind": "coverage", "body": {"camera": "cam1", "boot": "c1", "clock_rev": 1, "from": 95, "until": 120}}
+{"step": 2, "kind": "coverage", "body": {"camera": "cam2", "boot": "c2", "clock_rev": 1, "from": 96, "until": 113}}
+{"step": 2, "kind": "trigger", "body": {"boot": "g9", "seq": 2, "pulse": "q", "time": 104, "channels": ["cam2"], "tol": 2}}
+{"step": 3, "kind": "field", "body": {"target": "g9/1/cam1", "receipt": "o8", "state": "accepted"}}
+{"step": 3, "kind": "field", "body": {"target": "g9/1/cam2", "receipt": "o9", "state": "accepted"}}
+{"step": 4, "kind": "clock", "body": {"camera": "cam1", "boot": "c1", "offset": 96, "first_tick": 0, "last_tick": 50, "rev": 2}}
+{"step": 4, "kind": "coverage", "body": {"camera": "cam1", "boot": "c1", "clock_rev": 2, "from": 95, "until": 120}}
+{"step": 4, "kind": "frame", "body": {"camera": "cam2", "boot": "c2", "id": "rep4", "tick": 20, "pulse": "p", "rev": 1, "upload": "h4", "retake_of": "g9/1/cam2"}}
+{"step": 5, "kind": "field", "body": {"target": "g9/1/cam2", "receipt": "o10", "state": "completed"}}
