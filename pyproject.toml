@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imaging-lakehouse"
+version = "0.1.0"
+description = "Dual-source trigger/frame reconciliation and retake intention lakehouse"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+imaging-lake = "imaging_lake.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["imaging_lake*"]

@@ -1,0 +1,228 @@
+{
+  "shift": "g9",
+  "usable_images": [
+    {
+      "target": "g9/1/cam1",
+      "frame": "f2",
+      "rev": 1,
+      "unified_time": 103
+    }
+  ],
+  "ambiguous": [],
+  "facts": [
+    {
+      "target": "g9/1/cam1",
+      "state": "paired",
+      "boundary": [
+        96,
+        104
+      ],
+      "control_continuous": true,
+      "expected_seq_interval": [
+        1,
+        3
+      ],
+      "camera_support_ids": [
+        "COV-390000afd479"
+      ],
+      "retake_status": "accepted"
+    },
+    {
+      "target": "g9/1/cam2",
+      "state": "missing_confirmed",
+      "boundary": [
+        96,
+        104
+      ],
+      "control_continuous": true,
+      "expected_seq_interval": [
+        1,
+        3
+      ],
+      "camera_support_ids": [
+        "COV-563f7225994b"
+      ],
+      "retake_status": "completed"
+    },
+    {
+      "target": "g9/2/cam2",
+      "state": "missing_confirmed",
+      "boundary": [
+        102,
+        106
+      ],
+      "control_continuous": true,
+      "expected_seq_interval": [
+        1,
+        3
+      ],
+      "camera_support_ids": [
+        "COV-563f7225994b"
+      ],
+      "retake_status": "offered"
+    },
+    {
+      "target": "g9/3/cam1",
+      "state": "missing_confirmed",
+      "boundary": [
+        105,
+        113
+      ],
+      "control_continuous": true,
+      "expected_seq_interval": [
+        1,
+        3
+      ],
+      "camera_support_ids": [
+        "COV-390000afd479"
+      ],
+      "retake_status": "offered"
+    },
+    {
+      "target": "g9/3/cam2",
+      "state": "missing_confirmed",
+      "boundary": [
+        105,
+        113
+      ],
+      "control_continuous": true,
+      "expected_seq_interval": [
+        1,
+        3
+      ],
+      "camera_support_ids": [
+        "COV-563f7225994b"
+      ],
+      "retake_status": "offered"
+    }
+  ],
+  "intentions": [
+    {
+      "intention_id": "RT:g9/1/cam1",
+      "target": "g9/1/cam1",
+      "status": "accepted",
+      "claimable": false,
+      "revision": 1,
+      "receipt_ids": [
+        "o8"
+      ],
+      "retake_frame_ids": [],
+      "original_recovered_after_acceptance": true,
+      "original_recovered_after_completion": false
+    },
+    {
+      "intention_id": "RT:g9/1/cam2",
+      "target": "g9/1/cam2",
+      "status": "completed",
+      "claimable": false,
+      "revision": 1,
+      "receipt_ids": [
+        "o9",
+        "o10"
+      ],
+      "retake_frame_ids": [
+        "rep4"
+      ],
+      "original_recovered_after_acceptance": false,
+      "original_recovered_after_completion": false
+    },
+    {
+      "intention_id": "RT:g9/2/cam2",
+      "target": "g9/2/cam2",
+      "status": "offered",
+      "claimable": true,
+      "revision": 1,
+      "receipt_ids": [],
+      "retake_frame_ids": [],
+      "original_recovered_after_acceptance": false,
+      "original_recovered_after_completion": false
+    },
+    {
+      "intention_id": "RT:g9/3/cam1",
+      "target": "g9/3/cam1",
+      "status": "offered",
+      "claimable": true,
+      "revision": 1,
+      "receipt_ids": [],
+      "retake_frame_ids": [],
+      "original_recovered_after_acceptance": false,
+      "original_recovered_after_completion": false
+    },
+    {
+      "intention_id": "RT:g9/3/cam2",
+      "target": "g9/3/cam2",
+      "status": "offered",
+      "claimable": true,
+      "revision": 1,
+      "receipt_ids": [],
+      "retake_frame_ids": [],
+      "original_recovered_after_acceptance": false,
+      "original_recovered_after_completion": false
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "step": 2,
+      "kind": "intention.issued",
+      "target": "g9/1/cam1",
+      "event_id": "EVT-0e1ea43779ce"
+    },
+    {
+      "seq": 2,
+      "step": 2,
+      "kind": "intention.issued",
+      "target": "g9/1/cam2",
+      "event_id": "EVT-30dc64279d60"
+    },
+    {
+      "seq": 3,
+      "step": 2,
+      "kind": "intention.issued",
+      "target": "g9/2/cam2",
+      "event_id": "EVT-8d64ae7fd2eb"
+    },
+    {
+      "seq": 4,
+      "step": 2,
+      "kind": "intention.issued",
+      "target": "g9/3/cam2",
+      "event_id": "EVT-88ea0d2f6367"
+    },
+    {
+      "seq": 5,
+      "step": 3,
+      "kind": "intention.accepted",
+      "target": "g9/1/cam1",
+      "event_id": "EVT-79e1b537b7a0"
+    },
+    {
+      "seq": 6,
+      "step": 3,
+      "kind": "intention.accepted",
+      "target": "g9/1/cam2",
+      "event_id": "EVT-e017354f963b"
+    },
+    {
+      "seq": 7,
+      "step": 4,
+      "kind": "intention.superseded_after_acceptance",
+      "target": "g9/1/cam1",
+      "event_id": "EVT-2ac4cfd3f758"
+    },
+    {
+      "seq": 8,
+      "step": 4,
+      "kind": "intention.issued",
+      "target": "g9/3/cam1",
+      "event_id": "EVT-3163b4910bc4"
+    },
+    {
+      "seq": 9,
+      "step": 5,
+      "kind": "intention.completed",
+      "target": "g9/1/cam2",
+      "event_id": "EVT-8c28a5ef9679"
+    }
+  ]
+}

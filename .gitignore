@@ -1,2 +1,10 @@
 __pycache__/
 .venv/
+.imaging-lake/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.pytest_cache/
+*.egg-info/
+build/
+dist/
